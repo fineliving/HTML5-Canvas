@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <title>Warping Time</title>
+
+   <style>
+      body {
+         background: #cdcdcd;
+      }
+
+      .controls {
+         position: absolute;
+         left: 150px;
+         top: 10px;
+         font: 12px Arial;
+      }
+
+      #canvas {
+         position: absolute;
+         left: 0px;
+         top: 20px;
+         margin: 20px;
+         border: thin inset rgba(100, 150, 230, 0.8);
+         background: #efefef;
+      }
+
+      #animateButton {
+         margin-left: 15px;
+         margin-bottom: 10px;
+      }
+   </style>
+</head>
+
+<body>
+   <input id='animateButton' type='button' value='Animate' />
+
+   <canvas id='canvas' width='420' height='100'>
+      Canvas not supported
+   </canvas>
+
+   <div id='motionControls' class='controls'>
+      <div id='motionRadios'>
+         <input type='radio' name='motion' id='linearRadio' checked />Linear
+         <input type='radio' name='motion' id='easeInRadio' />Ease In
+         <input type='radio' name='motion' id='easeOutRadio' />Ease Out
+         <input type='radio' name='motion' id='easeInOutRadio' />Ease In/Out
+      </div>
+   </div>
+
+   <script src='stopwatch.js'></script>
+   <script src='animationTimer.js'></script>
+   <script src='requestNextAnimationFrame.js'></script>
+   <script src='sprites.js'></script>
+   <script src='example.js'></script>
+</body>
+
+</html>

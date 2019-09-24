@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+   <title>Video</title>
+
+   <style>
+      body {
+         background: #dddddd;
+      }
+
+      #canvas {
+         background: #ffffff;
+         border: thin solid darkgray;
+      }
+
+      #video {
+         display: none;
+      }
+   </style>
+</head>
+
+<body>
+   <video id='video' poster>
+      <source src='Chrome_starts_fast_hammock.mp4' />
+      <source src='Chrome_starts_fast_hammock.ogg' />
+   </video>
+
+   <canvas id='canvas' width='720' height='405'>
+      Canvas not supported
+   </canvas>
+
+   <script src='../../shared/js/requestNextAnimationFrame.js'></script>
+   <script src='example.js'></script>
+</body>
+
+</html>

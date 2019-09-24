@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+   <title>Bounding Box Collision Detection</title>
+
+   <style>
+      body {
+         background: #eeeeee;
+      }
+
+      #thrustersCanvas {
+         background: rgba(255, 255, 255, 0.4);
+         position: absolute;
+         left: 135px;
+         top: 250px;
+         border: thin solid rbga(0, 0, 0, 1.0);
+         -webkit-box-shadow: rgba(100, 140, 230, 0.5) 4px 4px 6px;
+         -moz-box-shadow: rgba(100, 140, 230, 0.5) 4px 4px 6px;
+         box-shadow: rgba(100, 140, 230, 0.5) 4px 4px 6px;
+      }
+
+      #canvas {
+         position: absolute;
+         left: 0px;
+         top: 0px;
+         margin-top: 10px;
+         margin-left: 25px;
+         background: rgba(135, 206, 250, 1.0);
+         border: thin solid rbga(0, 0, 0, 1.0);
+         -webkit-box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 6px;
+         -moz-box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 6px;
+         box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 6px;
+      }
+
+      input {
+         margin-left: 15px;
+      }
+   </style>
+</head>
+
+<body>
+   <canvas id="canvas" width="350" height="500">
+      Canvas not supported
+   </canvas>
+
+   <div id='thrustersDiv'>
+      <canvas id='thrustersCanvas' width='110' height='50'>
+         canvas not supported
+      </canvas>
+   </div>
+
+   <script src='../../shared/js/stopwatch.js'></script>
+   <script src='../../shared/js/animationTimer.js'></script>
+   <script src='../../shared/js/sprites.js'></script>
+   <script src='../../shared/js/requestNextAnimationFrame.js'></script>
+   <script src='example.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+   <title>Video</title>
+
+   <style>
+      body {
+         background: #dddddd;
+      }
+
+      .floatingControls {
+         position: absolute;
+         left: 175px;
+         top: 290px;
+      }
+
+      #canvas {
+         background: #ffffff;
+         border: thin solid #aaaaaa;
+         margin: 10px;
+      }
+
+      #video {
+         display: none;
+      }
+   </style>
+</head>
+
+<body>
+   <video id='video' controls src='smurfs.mp4'></video>
+
+   <canvas id='canvas' width='480' height='260'>
+      Canvas not supported
+   </canvas>
+
+   <div id='controls' class='floatingControls'>
+      <input id='controlButton' type='button' value='Play' />
+      <input id='colorCheckbox' type='checkbox' checked> <span style='font-size:1.15em'>Color</span>
+      <input id='flipCheckbox' type='checkbox'> <span style='font-size:1.15em'>Flip</span>
+   </div>
+
+   <script src='../../shared/js/requestNextAnimationFrame.js'></script>
+   <script src='example.js'></script>
+</body>
+
+</html>
