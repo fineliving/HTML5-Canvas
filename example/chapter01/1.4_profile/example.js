@@ -1,0 +1,3 @@
+console.profile('Core HTML5 Animation,erasing the background');
+//...
+console.profileEnd();
